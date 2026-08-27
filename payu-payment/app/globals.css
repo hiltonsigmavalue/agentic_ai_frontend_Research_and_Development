@@ -1,0 +1,32 @@
+* { box-sizing: border-box; }
+html, body { margin: 0; min-height: 100%; font-family: Arial, Helvetica, sans-serif; color: #172033; background: #f4f7f8; }
+button, input { font: inherit; }
+.page { min-height: 100vh; display: flex; justify-content: center; align-items: flex-start; padding: 56px 20px; }
+.card { width: 100%; max-width: 720px; background: white; border: 1px solid #d9dee7; border-radius: 18px; padding: 36px; box-shadow: 0 12px 40px rgba(20,30,50,.08); }
+.brand { display: inline-block; color: white; background: #0b624a; padding: 7px 13px; border-radius: 8px; font-weight: 700; margin-bottom: 16px; }
+h1 { margin: 0 0 8px; }
+.muted { color: #687386; margin-top: 0; }
+.form { margin-top: 28px; display: grid; gap: 18px; }
+.tabs { display: flex; gap: 8px; padding: 5px; background: #f0f3f5; border-radius: 10px; }
+.tab { flex: 1; border: 0; background: transparent; border-radius: 7px; padding: 10px; cursor: pointer; }
+.tab.active { background: white; box-shadow: 0 1px 5px rgba(0,0,0,.08); font-weight: 700; }
+label { display: grid; gap: 7px; font-weight: 600; font-size: 14px; }
+input { width: 100%; border: 1px solid #d9dee7; border-radius: 9px; padding: 12px 13px; outline: none; }
+input:focus { border-color: #087f5b; }
+.grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.international-box { padding: 18px; border: 1px solid #d7e7e1; background: #f6fbf9; border-radius: 12px; display: grid; gap: 14px; }
+.international-box p { margin: 0; font-weight: 700; }
+.button { border: 0; border-radius: 10px; padding: 13px 18px; background: #087f5b; color: white; font-weight: 700; cursor: pointer; }
+.button:hover { background: #066648; }
+.button:disabled { opacity: .6; cursor: wait; }
+.error { padding: 12px; border-radius: 8px; background: #fff0f0; color: #a61e1e; border: 1px solid #f2bcbc; }
+.small { color: #687386; font-size: 12px; margin: 0; }
+.result-card { text-align: center; }
+.result { display: inline-block; padding: 8px 12px; border-radius: 999px; font-weight: 700; margin-bottom: 18px; }
+.result.success { background: #e6f7ef; color: #087f5b; }
+.result.failure { background: #fff0f0; color: #a61e1e; }
+.result-details { text-align: left; display: grid; gap: 12px; margin: 24px 0; }
+.result-details div { display: grid; gap: 5px; padding: 12px; border: 1px solid #d9dee7; border-radius: 9px; }
+.result-details span { color: #687386; font-size: 12px; }
+.button.secondary { display: inline-block; text-decoration: none; background: #263244; }
+@media (max-width: 620px) { .card { padding: 22px; } .grid { grid-template-columns: 1fr; } }
